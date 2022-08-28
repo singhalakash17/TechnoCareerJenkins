@@ -36,6 +36,11 @@ public class TestLoginFunctionality {
         technoCareerMakers.runRegressionTest();
     }
 
+    @Test(groups = {"applicationcode"})
+    public void devTestCase(){
+        System.out.println("I am developer code only");
+    }
+
     @AfterMethod(alwaysRun = true)
     public void afterTestMethod(){
         webDriver.quit();
